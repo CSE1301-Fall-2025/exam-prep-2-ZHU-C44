@@ -14,13 +14,27 @@ public class Q07 {
 	Complete the method. You may use either iteration or recursion.
 	*/
 	
-	public static int rollingSum (int n ) {
-		return 0; //fix me
+	public static int rollingSumIt (int n) {
+		int sum = 0;
+		for (int i = 0; i<= n; i++) {
+			sum = sum + i;
+		}
+		return sum;
 	}
 	
+	public static int rollingSumRec (int n) {
+		if (n == 0) {
+			return 0;
+		}
+
+		return rollingSumRec(n-1) + n;
+
+	}
+
+
 	public static void main ( String[] args ) {
-		System.out.println(rollingSum(5)); //should be 15
-		System.out.println(rollingSum(3)); //should be 6
+		System.out.println(rollingSumIt(5)); //should be 15
+		System.out.println(rollingSumRec(3)); //should be 6
 	}
 
 }

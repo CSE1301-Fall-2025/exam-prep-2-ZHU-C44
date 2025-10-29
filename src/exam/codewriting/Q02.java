@@ -13,7 +13,10 @@ public class Q02 {
 	*
 	**/
 	public static void dashedLine(double x) {
-		
+		StdDraw.setPenColor(0,0,0);
+		for (double index = 0; index <=1; index = index + 0.04) {
+			StdDraw.line(0.25, index, 0.25, index+0.02);
+		}
 	}
 
 	public static void main(String[] args) {

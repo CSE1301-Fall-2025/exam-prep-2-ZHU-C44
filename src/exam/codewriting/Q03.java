@@ -6,6 +6,13 @@ public class Q03 {
 
 	public static void boxy ( double xCtr , double yCtr , double halfLength ) {
 		//your code here
+
+		if(halfLength < 0.03) return;
+
+		StdDraw.square(xCtr,yCtr,halfLength);
+		boxy(xCtr-halfLength, yCtr-halfLength,halfLength/2);
+		boxy(xCtr+halfLength, yCtr-halfLength,halfLength/2);
+
 	}
 
 	public static void main(String[] args) {

@@ -18,7 +18,15 @@ public class Q05 {
 	appropriately. It is not necessary to use recursion for this problem. Complete the method below:
 	*/
 	public static int countValue (int[] a, int findMe ) {
-		return 0; //fix me
+		int index = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == findMe) {
+				index++;
+			}
+		}
+
+		return index;
+		
 	}
 
 

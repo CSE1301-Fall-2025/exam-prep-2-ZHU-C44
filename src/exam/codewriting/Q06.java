@@ -23,16 +23,30 @@ public class Q06 {
 	
 	//Your task is to write a recursive implementation of the above method.
 	//You should use a helper method as part of your recursive implementation.
-	
-	public static double sqrtR( double x) {
-		return 0; //fix me
+
+	private static double helper(double x, double guess, double precision) {
+
+		double newGuess = (x/guess + guess)/2;
+
+		if (Math.abs(newGuess - guess) <= precision) {
+			return newGuess;
+		}
+
+		return helper(x, newGuess, precision);	
+
 	}
 
+
+	public static double sqrtR( double x) {
+		return helper(x,x/2,0.001);
+	}
+
+	
 
 	public static void main ( String[] args ) {
 		System.out.println(sqrt(5)); //given method
 		
-		System.out.println(sqrt(5)); //your recursive method
+		System.out.println(sqrtR(5)); //your recursive method
 		
 	}
 

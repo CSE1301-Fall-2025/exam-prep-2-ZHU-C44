@@ -24,7 +24,18 @@ public class Q08 {
 	 */
 
 	public static int[] countValues (int[][] a, int findMe ) {
-		return new int[0]; //fix me
+
+		int newArray[] = new int [a.length];
+
+		for (int col = 0; col < a[0].length; col++) {
+			for (int row = 0; row < a.length; row++) {
+				if (a[row][col] == findMe) {
+					newArray[col] = newArray[col] + 1;
+				}
+			}
+		}
+
+		return newArray;
 	}
 
 	public static void main ( String[] args ) {
