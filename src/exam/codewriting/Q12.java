@@ -39,7 +39,6 @@ public class Q12 {
 	public static void main(String[] args) {
 		//Your task is to complete the above method to draw the image
 		//shown in "image03.png" in the images folder.
-
 		//Your solution must use recursion
 
 		StdDraw.setPenColor(0,0,0);

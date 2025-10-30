@@ -37,7 +37,7 @@ public class Q06 {
 	}
 
 
-	public static double sqrtR( double x) {
+	public static double sqrtR( double x ) {
 		return helper(x,x/2,0.001);
 	}
 
@@ -45,7 +45,7 @@ public class Q06 {
 
 	public static void main ( String[] args ) {
 		System.out.println(sqrt(5)); //given method
-		
+		System.out.println(Math.sqrt(5));
 		System.out.println(sqrtR(5)); //your recursive method
 		
 	}

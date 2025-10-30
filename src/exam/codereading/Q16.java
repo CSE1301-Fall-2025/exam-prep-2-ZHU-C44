@@ -27,7 +27,6 @@ public class Q16 {
 	public static void main(String[] args) {
 		//Use the substitution method to show the computation of
 		//the following:
-		
 		sapphire(3);
 	}
 }

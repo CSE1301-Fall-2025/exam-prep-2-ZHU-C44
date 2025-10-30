@@ -17,5 +17,6 @@ public class Q12 {
 		//the following:
 		
 		foo(3);
+		System.out.println(foo(3));
 	}
 }
